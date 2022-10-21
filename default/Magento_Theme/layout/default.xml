@@ -12,14 +12,17 @@
         <referenceBlock name="top.search" remove="true" />
         <referenceBlock name="compare-link-wrapper" remove="true" />
         
-        <referenceContainer name="form.subscribe" remove="true" />
-        <referenceContainer name="footer_links" remove="true" />
-        <referenceContainer name="footer">
+        <referenceContainer name="footer" remove="true" />
+        <referenceContainer name="footer-container" htmlClass="page_footer section_padding_top_50 section_padding_bottom_65 columns_padding_25 ds">
             <block class="Magento\Cms\Block\Block" name="cms-footer" before="-">
                 <arguments>
                     <argument name="block_id" xsi:type="string">footer</argument>
                 </arguments>
             </block>
         </referenceContainer>
+
+        <referenceBlock name="copyright" remove="true">
+            
+        </referenceBlock>
     </body>
 </page>
