@@ -25,6 +25,8 @@
                 </arguments>
             </block>
         </referenceContainer>
+        
+        <referenceContainer name="main" htmlId="box_wrapper" />
 
         <referenceBlock name="copyright" remove="true">
 
