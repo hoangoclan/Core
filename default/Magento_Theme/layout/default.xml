@@ -8,10 +8,15 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="header.panel.wrapper" remove="true" />
+
+        <referenceContainer name="header.container">
+            <block class="Magento\Framework\View\Element\Template" name="custom_header" as="custom_header" template="Magento_Theme::html/customheader.phtml" before="-"/>
+        </referenceContainer>
+
         <referenceBlock name="minicart" remove="true" />
         <referenceBlock name="top.search" remove="true" />
         <referenceBlock name="compare-link-wrapper" remove="true" />
-        
+
         <referenceContainer name="footer" remove="true" />
         <referenceContainer name="footer-container" htmlClass="page_footer section_padding_top_50 section_padding_bottom_65 columns_padding_25 ds">
             <block class="Magento\Cms\Block\Block" name="cms-footer" before="-">
@@ -22,7 +27,9 @@
         </referenceContainer>
 
         <referenceBlock name="copyright" remove="true">
-            
+
         </referenceBlock>
+
+        <move element="navigation.sections" destination="header.container" />
     </body>
 </page>

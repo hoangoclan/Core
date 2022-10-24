@@ -1,0 +1,27 @@
+
+<div class="page_header_wrapper affix-top-wrapper">
+    <div class="page_header ds toggler_xs_right affix-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 display_table">
+                    <div class="header_left_logo display_table_cell">
+                        <?php echo $this->getLayout()->createBlock("Magento\Theme\Block\Html\Header\Logo")->setTemplate("Magento_Theme::html/header/logo.phtml")->toHtml(); ?>
+                    </div>
+
+                    <div class="header_mainmenu display_table_cell text-center">
+                        <?php echo $this->getLayout()->createBlock("Magento\Theme\Block\Html\Topmenu")->setTemplate("Magento_Theme::html/topmenu.phtml")->toHtml(); ?>
+                    </div>
+
+                    <div class="header_right_buttons display_table_cell text-right hidden-xs">
+                        <span class="header_phone">
+                            <span>
+                                1-800
+                            </span>
+                            -123-4567
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
