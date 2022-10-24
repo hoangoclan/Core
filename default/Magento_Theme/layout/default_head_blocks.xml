@@ -24,6 +24,6 @@
         <css rel="stylesheet" src="css/fonts.css" type="text/css" media="all" />
         <css rel="stylesheet" src="css/animations.css" type="text/css" media="all" />
         <css rel="stylesheet" src="css/main.css" type="text/css" media="all" />
-        
+        <css rel="stylesheet" src="css/rs6.css" type="text/css" media="all" />
     </head>
 </page>

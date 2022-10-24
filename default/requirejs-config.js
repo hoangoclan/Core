@@ -8,6 +8,8 @@ var config = {
         'appear':'js/lib/jquery.appear',
         'parallax':'js/lib/jquery.parallax-1.1.3',
         'anime':'js/lib/anime.min',
+        'revolution':'js/lib/revolution.tools.min',
+        'rs6':'js/lib/rs6.min',
     },
     
     shim: {
@@ -34,9 +36,17 @@ var config = {
         },
         'anime': {
             'deps': ['jquery']
+        },
+        'revolution': {
+            'deps': ['jquery']
+        },
+        'rs6': {
+            'deps': ['jquery', 'revolution']
         }
     },
     deps: [
-        'js/main'
+        'js/main',
+        'revolution',
+        'rs6'
     ]
 };
