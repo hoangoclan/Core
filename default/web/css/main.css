@@ -5459,6 +5459,23 @@ ul.no-bullets li {
     padding-bottom: 10px;
 }
 
+/* scroll menu */
+.toggler_xs_right.affix .header_left_logo{
+    padding-top: 0;
+}
+.toggler_xs_right.affix .header_mainmenu .navigation ul{
+    line-height: inherit;
+}
+.toggler_xs_right.affix .display_table{
+    margin-top: 15px;
+}
+.toggler_xs_right.affix .navigation{
+    top: 10px;
+}
+.toggler_xs_right.affix .header_right_buttons{
+    vertical-align: top;
+}
+
 /**dark section - .ds.ms*/
 .ds.ms {
   background-color: #1f2732;
@@ -6843,7 +6860,7 @@ header 2
 /* Custom header */
 
 .toggler_xs_right.affix-top .navigation .level0 .submenu{
-    top: 114px !important;
+    top: 98px !important;
 }
 .toggler_xs_right.affix .navigation .level0 .submenu{
     top: 60px !important;
@@ -6851,11 +6868,11 @@ header 2
 .header_mainmenu .navigation{
     background-color: transparent;
     height: 100%;
+    top: 40%;
 }
 
 .header_mainmenu .navigation ul{
     height: 100%;
-    line-height: 138px;
 }
 
 .header_mainmenu .navigation .level0 .submenu{
@@ -6927,7 +6944,7 @@ header 2
     padding: 0 15px;
   }
   .row .header_left_logo {
-    padding: inherit;
+    padding-top: 48px;
   }
   .header_right_buttons {
     padding: 0;
@@ -7025,7 +7042,6 @@ a.logo {
   position: relative;
   z-index: 2;
   padding: 5px 0;
-  margin-top: 30px;
 }
 
 a.logo img {
@@ -7237,6 +7253,7 @@ a.logo.vertical_logo img {
 .page_header.affix {
     position: fixed;
     background-color: #1f2732;
+    height: 93px;
 }
 
 .page_header.affix .search_modal {
