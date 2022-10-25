@@ -6771,14 +6771,14 @@ header 2
 ***/
 @media (min-width: 768px) {
   .main-header-wrap {
-      position: relative;
+      position: absolute;
       width: 100%;
       margin-top: 0;
   }
   .main-header-wrap .header.content,.main-header-wrap .sections.nav-sections{
         display: none;
   }
-  .main-header-wrap .page_header_wrapper {
+  .main-header-wrap .page_header {
     -webkit-transition: background 0.2s ease-in-out 0s;
     -moz-transition: background 0.2s ease-in-out 0s;
     -o-transition: background 0.2s ease-in-out 0s;
@@ -6804,6 +6804,9 @@ header 2
   }
   .intro_section.page_mainslider .slide_description_wrapper {
     margin-top: 30px;
+  }
+  #maincontent{
+
   }
 }
 
@@ -7232,7 +7235,8 @@ a.logo.vertical_logo img {
 }
 
 .page_header.affix {
-  position: fixed;
+    position: fixed;
+    background-color: #1f2732;
 }
 
 .page_header.affix .search_modal {
@@ -14852,7 +14856,8 @@ aside .form-control:focus,
 }
 
 .page_footer.ds {
-  color: #7f7f7f;
+    color: #7f7f7f;
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .page_footer p {
