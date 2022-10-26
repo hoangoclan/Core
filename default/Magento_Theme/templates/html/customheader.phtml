@@ -13,12 +13,7 @@
                     </div>
 
                     <div class="header_right_buttons display_table_cell text-right hidden-xs">
-                        <span class="header_phone">
-                            <span>
-                                1-800
-                            </span>
-                            -123-4567
-                        </span>
+                        <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header-phone')->toHtml();?>
                     </div>
                 </div>
             </div>
