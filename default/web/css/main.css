@@ -5472,6 +5472,9 @@ ul.no-bullets li {
 .toggler_xs_right.affix .navigation{
     top: 10px;
 }
+.page_header .navigation .level0.parent:hover > .submenu{
+    display: block;
+}
 .toggler_xs_right.affix .header_right_buttons{
     vertical-align: top;
 }
@@ -6863,7 +6866,7 @@ header 2
     top: 98px !important;
 }
 .toggler_xs_right.affix .navigation .level0 .submenu{
-    top: 60px !important;
+    top: 67px !important;
 }
 .header_mainmenu .navigation{
     background-color: transparent;
@@ -6874,13 +6877,10 @@ header 2
 .header_mainmenu .navigation ul{
     height: 100%;
 }
-
+.header_mainmenu .navigation li.level0{ height: 100%;}
 .header_mainmenu .navigation .level0 .submenu{
     height: auto;
     line-height: inherit;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
 }
 
 .header_mainmenu .navigation .level0 > .level-top{
@@ -14873,9 +14873,16 @@ aside .form-control:focus,
 }
 
 .page_footer.ds {
-    color: #7f7f7f;
-    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    background-image: url("../images/footer_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: unset;
+    background-color: transparent;
 }
+
+.page_footer .fw-main-row{background-color: transparent;}
 
 .page_footer p {
   line-height: 25px;
